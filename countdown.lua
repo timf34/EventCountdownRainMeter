@@ -70,11 +70,14 @@ function Update()
 
     local minutes = math.floor(difference / 60)
 
+    print("Days in Update: " .. days)
+
     return days, hours, minutes
 end
 
 function GetDays()
     local days, _, _ = Update()
+    print("Days in GetDays: " .. days)
     return days
 end
 
