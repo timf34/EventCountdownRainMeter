@@ -27,7 +27,8 @@ function Update()
     difference = difference % (60 * 60)
 
     local minutes = math.floor(difference / 60)
+    local seconds = difference % 60
     
-    -- Return the formatted string directly
-    return "Days: " .. days .. ", Hours: " .. hours .. ", Minutes: " .. minutes
+    -- Return the formatted string with seconds
+    return "Days: " .. days .. ", Hours: " .. hours .. ", Minutes: " .. minutes .. ", Seconds: " .. seconds
 end
